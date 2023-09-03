@@ -1,2 +1,2 @@
-# 100_Day Of Python Projects
-Projects I've done in the course of 100 day of python boot camp
+# 100_Day_Of_Python_Projects
+Projects I've done in the course of 100 day of python bootcamp
