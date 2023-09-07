@@ -7,6 +7,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 state= True
 new_index =0
 # #TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
+#Stage 1
 # def encrypt(text, shift):
 
 #     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
@@ -31,6 +32,7 @@ new_index =0
 # #TODO-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message. 
 
 # #####################################################################
+#Stage 2
 # #TODO-1: Create a different function called 'decrypt' that takes the 'text' and 'shift' as inputs.
 
 #   #TODO-2: Inside the 'decrypt' function, shift each letter of the 'text' *backwards* in the alphabet by the shift amount and print the decrypted text.  
@@ -67,7 +69,7 @@ new_index =0
 #             state = False
 
 #########################################################
-
+#Stage 3 and 4
 #TODO-1: Import and print the logo from art.py when the program starts.
 #TODO-4: Can you figure out a way to ask the user if they want to restart the cipher program?
 #e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
