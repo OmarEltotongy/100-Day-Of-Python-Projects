@@ -8,3 +8,4 @@ Projects I've done in the course of 100 days of python boot camp
 5. PyPassword Generator
 6. Escaping The Maze
 7. Hangman Game
+8. Caesar Cipher
