@@ -1,6 +1,21 @@
 ## Lists of Dictionaries
 #Project idea: Travel Tracker
+## For illustration:
 
+# my_list = [
+#     {"name": "Alice", "age": 30},
+#     {"name": "Bob", "age": 25},
+#     {"name": "Charlie", "age": 35}
+# ]
+
+# You can use a for loop to iterate over each dictionary in the list and access its key-value pairs like this:
+
+# for person in my_list:
+#     print("Name:", person["name"])
+#     print("Age:", person["age"])
+#     print()  # Just for adding an empty line between each person
+
+#################################################
 import os #For clearing the screen
 import art
 
