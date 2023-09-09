@@ -63,6 +63,11 @@
 import random
 import art
 
+def Print_Cards():
+    print(f"Ur cards are {user_cards}\n")
+    print(f"Computer cards are {computer_cards}\n")
+
+
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 user_cards = [random.choice(cards), random.choice(cards)]
 computer_cards= [random.choice(cards), random.choice(cards)]
@@ -75,11 +80,67 @@ print(f"Computer first card is: {computer_cards[0]}\n")
 total_cards_for_computer = sum(computer_cards)  
 total_cards_for_user = sum(user_cards)
 
-computer_blackjack_state = False
-user_blackjack_state = False
-user_exceed_limit = False
-draw_state = False
-computer_exceed_limit = False
-        
+
+while(True):
+
+    if (total_cards_for_computer == 21):
+        Print_Cards()
+        print("Computer has an ace, good luck next time\n")
+        break
+    elif (total_cards_for_computer == 21 and total_cards_for_user == 21):
+        Print_Cards()
+        print("Computer has an ace, good luck next time\n")
+        break
+    elif (total_cards_for_user == 21 ):
+        Print_Cards()
+        print("U won,U have an ace, Congrats\n")
+        break
+    elif (total_cards_for_user > 21):
+        if (user_cards[0] == 11):
+            user_cards[0] = 1
+            total_cards_for_user = sum(user_cards)
+            if(total_cards_for_user > 21):
+                Print_Cards()
+                print("U are still over 21 , good luck next time\n")
+                break
+
+        elif (user_cards[1]== 11):
+            user_cards[1] = 1
+            total_cards_for_user = sum(user_cards)
+
+            if(total_cards_for_user > 21):
+                Print_Cards()
+                print("U are still over 21 , good luck next time\n")
+                break
+
+        else:
+            Print_Cards()
+            print("U are over 21 , good luck next time\n")
+            break
+    
+    option = input("Do u want to get another cards type 'y' for yes and 'n' for no: ")
+    if (option == 'y'):
+        user_cards.append(random.choice(cards))
+        total_cards_for_user = sum(user_cards)
+        continue
+    elif(option == 'n'):
+        while(total_cards_for_computer < 17):
+            computer_cards.append(random.choice(cards))
+        if(total_cards_for_computer > 21):
+            Print_Cards()
+            print("U won, computer has over 21\n")
+            break
+        elif(total_cards_for_computer > total_cards_for_user):
+            Print_Cards()
+            print("Computer has more points than u,U lost \n")
+            break
+        elif(total_cards_for_computer < total_cards_for_user):
+            Print_Cards()
+            print("U have more points than computer,U won\n ")
+            break
+        elif(total_cards_for_computer == total_cards_for_user):
+            Print_Cards()
+            print("That's a draw, No one won\n")
+            break
 
 
