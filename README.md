@@ -1,4 +1,4 @@
-# 100_Day_Of_Python_Projects
+# 100_Days_Of_Python_Projects
 Projects I've done in the course of 100 days of python boot camp
 
 1. Band Name Generator.
