@@ -12,3 +12,5 @@ Projects I've done in the course of 100 days of python boot camp
 9. Secret Auction.
 10. Calculator.
 11. Blackjack.
+12. Guessing Number Game
+13. Higher Lower Game
