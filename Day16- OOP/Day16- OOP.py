@@ -34,20 +34,17 @@ while(True):
     
     elif (order == 'espresso'):
         menu.find_drink('espresso')
-        maker.is_resource_sufficient(espresso)
-        money.make_payment(cost= money.money_received)
-        maker.make_coffee(espresso)
+        if maker.is_resource_sufficient(espresso) and money.make_payment(cost= money.money_received):
+            maker.make_coffee(espresso)
     elif (order == 'latte'):
         menu.find_drink('latte')
-        maker.is_resource_sufficient(latte)
-        money.make_payment(cost= money.money_received)
-        maker.make_coffee(latte)
+        if maker.is_resource_sufficient(latte) and money.make_payment(cost= money.money_received):
+            maker.make_coffee(latte)
 
     elif (order == 'cappuccino'):
         menu.find_drink('cappuccino')
-        maker.is_resource_sufficient(cappuccino)
-        money.make_payment(cost= money.money_received)
-        maker.make_coffee(cappuccino)
+        if maker.is_resource_sufficient(cappuccino) and money.make_payment(cost= money.money_received):
+            maker.make_coffee(cappuccino)
         
     else:
         menu.find_drink(order_name= order)
