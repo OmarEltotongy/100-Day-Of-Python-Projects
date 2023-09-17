@@ -28,7 +28,7 @@ while(True):
     
     if(order =='report'):
         maker.report()
-    
+        money.report()
     elif(order == 'menu'):
         menu.get_items
     
