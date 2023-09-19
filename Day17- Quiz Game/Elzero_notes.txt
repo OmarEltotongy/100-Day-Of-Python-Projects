@@ -1,0 +1,59 @@
+# To sum up the difference between classmethod and classic method:
+
+# use classmethod to implement methods that work on a whole class (and not on particular class instances):
+
+# Car.blue_cars()
+# use instance methods to implement methods that work on a particular instance:
+
+# my_car = Car(colour='red')
+# my_car.get_colour() # should return 'red'
+
+
+# --------------------------------------------------
+# -- Object Oriented Programming => Magic Methods --
+# --------------------------------------------------
+# Everything in Python is An Object
+# __init__  Called Automatically When Instantiating Class
+# self.__class__ The class to which a class instance belongs
+# __str__   Gives a Human-Readable Output of the Object
+# __len__   Returns the Length of the Container
+#           Called When We Use the Built-in len() Function on the Object
+
+# ------------------------------------------------
+# -- Object Oriented Programming => Inheritance --
+# ------------------------------------------------
+
+# class Food:  # Base Class
+
+#   def __init__(self, name, price):
+
+#     self.name = name
+
+#     self.price = price
+
+#     print(f"{self.name} Is Created From Base Class")
+
+#   def eat(self):
+
+#     print("Eat Method From Base Class")
+
+# class Apple(Food):  # Derived Class
+
+#   def __init__(self, name, price, amount):
+
+#     # Food.__init__(self, name)  # Create Instance From Base Class
+
+#     super().__init__(name, price)
+
+#     self.amount = amount
+
+#     print(f"{self.name} Is Created From Derived Class And Price Is {self.price} And Amount Is {self.amount}")
+
+#   def get_from_tree(self):
+
+#       print("Get From Tree From Derived Class")
+
+# # food_one = Food("Pizza")
+# food_two = Apple("Pizza", 150, 500)
+# food_two.eat()
+# food_two.get_from_tree()
