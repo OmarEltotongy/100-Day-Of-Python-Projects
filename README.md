@@ -16,3 +16,5 @@ Projects I've done in the course of 100 days of python boot camp
 14. Higher Lower Game
 15. Coffee Machine
 16. Coffee Machine OOP
+17. Quiz Game
+18. The Hirst Painting
