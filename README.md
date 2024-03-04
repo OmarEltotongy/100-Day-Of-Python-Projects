@@ -21,3 +21,4 @@ Projects I've done in the course of 100 days of python boot camp
 19. Turtle Race
 20. Snake Game Part one
 21. Snake Game Part Two
+24. Mail Merge
